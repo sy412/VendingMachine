@@ -1,3 +1,28 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
 * {
   box-sizing: border-box;
 }
@@ -5,6 +30,10 @@
 body {
   background: #eae8fe;
   font-family: "Noto Sans KR", sans-serif;
+}
+.machine,
+.machine-r {
+  width: 360px;
 }
 
 .main {
@@ -16,24 +45,25 @@ body {
   position: absolute;
   top: 0;
   width: 386px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .machine {
-  width: 360px;
   height: 545px;
+  padding: 28px 24px;
   background: #ffffff;
 }
 ol,
 ul {
   list-style: none;
 }
-.machine .cola-list {
+.cola-list {
   display: grid;
-  padding: 31px 27px 28px;
   grid-template-columns: repeat(3, 1fr);
   gap: 12px;
 }
 .machine .cola-list li {
-  position: relative;
+  position: relative;/
 }
 .machine .cola {
   width: 94px;
@@ -47,6 +77,14 @@ ul {
   display: block;
   margin: 0 auto;
   width: 36px;
+}
+button {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
 }
 .cola-type {
   display: block;
@@ -65,13 +103,13 @@ ul {
   padding: 5px 16px 5px 15px;
 }
 
-.balance {
+.bottom {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
+  gap: 11px 23px;
   margin-top: 20px;
 }
-.balance button {
+.bottom button {
   width: 94px;
   padding: 6px 9px 8px;
   border-radius: 5px;
@@ -79,16 +117,26 @@ ul {
   border: none;
   line-height: 19px;
 }
-.balance-box {
+.balance-box,
+.put-place,
+.get-staged {
   grid-column: 1/3;
+}
+.balance-box {
   line-height: 20px;
   border-radius: 5px;
-  padding: 6px 10px;
+  padding: 6px 10px 7px 10px;
   font-size: 14px;
   background-color: #eae8fe;
 }
-.balance span {
+.balance-txt {
   float: right;
+}
+.balance-txt,
+.btn-put {
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  font-size: 13px;
 }
 .btn-return {
   height: 32px;
@@ -105,7 +153,7 @@ ul {
   line-height: 19px;
 }
 
-.get {
+.get-staged {
   grid-columnn: 1/3;
   height: 106px;
   padding: 12px;
@@ -121,9 +169,52 @@ ul {
   border-radius: 5px;
   filter: none;
 }
+
 .btn-get {
   width: 94px;
   height: 106px;
   color: white;
   background: #6327fe;
+}
+.money-box, 
+.get-list{
+  background-color: white;
+}
+.machine-r .money_box{
+  margin-bottom: 20px;
+  padding: 9px 27px;
+  border-radius: 4px;
+}
+.money-info{  
+  background-color: #eae8fe;
+  padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 20px;
+}
+.money{
+  float:right;
+}
+.price-cola-list{
+  margin-bottom:5px;
+}
+
+.get-list{
+  padding: 25px 27px 32px; 
+}
+.get-txt{
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 13px;
+}
+.price-cola-list{
+  height: 364px;
+    width: 306px;
+    padding: 12px 14px 12px 12px;
+    background-color: var(--light-purple);
+    border: 1px solid var(--light-gray);
+    border-radius: 4px;
+
 }
