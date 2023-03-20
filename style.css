@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #eae8fe;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  padding-top: 247px;
+}
+.logo {
+  position: absolute;
+  top: 0;
+  width: 386px;
+}
+.machine {
+  width: 360px;
+  height: 545px;
+  background: #ffffff;
+}
+ol,
+ul {
+  list-style: none;
+}
+.machine .cola-list {
+  display: grid;
+  padding: 31px 27px 28px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+.machine .cola-list li {
+  position: relative;
+}
+.machine .cola {
+  width: 94px;
+  border: none;
+  background-color: white;
+  height: 130px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+}
+.cola-img-m {
+  display: block;
+  margin: 0 auto;
+  width: 36px;
+}
+.cola-type {
+  display: block;
+  margin-top: 6px;
+  margin-bottom: 7px;
+  font-size: 9px;
+  color: #333333;
+}
+.cola-price {
+  background: #6327fe;
+  border-radius: 50px;
+  color: white;
+  left: 13px;
+  top: 99px;
+  font-size: 12px;
+  padding: 5px 16px 5px 15px;
+}
+
+.balance {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 20px;
+}
+.balance button {
+  width: 94px;
+  padding: 6px 9px 8px;
+  border-radius: 5px;
+  font-size: 13px;
+  border: none;
+  line-height: 19px;
+}
+.balance-box {
+  grid-column: 1/3;
+  line-height: 20px;
+  border-radius: 5px;
+  padding: 6px 10px;
+  font-size: 14px;
+  background-color: #eae8fe;
+}
+.balance span {
+  float: right;
+}
+.btn-return {
+  height: 32px;
+  background: #ffffff;
+  filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.5));
+}
+.put-place {
+  grid-column: 1/3;
+  width: 200px;
+  padding: 6px;
+  border: 1px solid #bdbdbd;
+  color: #bdbdbd;
+  font-size: 13px;
+  line-height: 19px;
+}
+
+.get {
+  grid-columnn: 1/3;
+  height: 106px;
+  padding: 12px;
+  overflow-y: scroll;
+  border: 1px solid #bdbdbd;
+  border-radius: 5px;
+  background-color: #eae8fe;
+}
+
+.get {
+  width: 170px;
+  padding: 8px;
+  border-radius: 5px;
+  filter: none;
+}
+.btn-get {
+  width: 94px;
+  height: 106px;
+  color: white;
+  background: #6327fe;
+}
